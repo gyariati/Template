@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/browser_alt.png">
+    <title>Home</title>
+    <script>
+        function startTime() {
+          var today = new Date();
+          var h = today.getHours();
+          var m = today.getMinutes();
+          var s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('txt').innerHTML =
+          h + ":" + m + ":" + s;
+          var t = setTimeout(startTime, 1000);
+        }
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};
+          return i;
+        }
+        </script>
+</head>
+<body onload="startTime()">
+    <main class="grid">
+
+<!-- ////////////////  PRIVATE SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+        <section class="private">
+            <ul>
+                <a href="#" target="_blank">
+                    <li><img src="images/Gmail_icon.svg" alt="icon"><div class="string">GMAIL<br>user@email.com</div></li>
+                </a>
+
+                <a href="#" target="_blank">
+                    <li><img src="images/youtube.svg" alt="icon"><div class="string">YOUTUBE<br>user@email.com</div></li>
+                </a>
+
+                <a href="#" target="_blank">
+                    <li><img src="images/bank_info.jpg" alt="icon"><div class="string">BANK<br>description</div></li>
+                </a>
+
+                <a href="#" target="_blank">
+                    <li><img src="images/work.png" alt="icon"><div class="string">WORK<br>description</div></li>
+                </a>
+
+                <a href="#" target="_blank">
+                    <li><img src="images/sports.png" alt="icon"><div class="string">HOBBY<br>description</div></li>
+                </a>
+
+                 <a href="#" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="string">SITE<br>description</div></li>
+                </a>
+
+                <a href="#" target="_blank">
+                    <li><img src="images/facebook_icon.svg" alt="icon" class="small-img"><div class="string">Facebook</div></li>
+                </a>
+
+                <a href="#" target="_blank">
+                    <li><img src="images/Twitter-Logo-Blue.svg" alt="icon" class="small-img"><div class="string">Twitter</div></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon" class="small-img"><div class="string">Site</div></li>
+                </a>
+
+            </ul>
+            
+        </section>
+
+<!-- ////////////////  GOOGLE SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+        <section class="google">
+            <ul class="flex">
+                <a href="https://www.google.hu/" target="_blank">
+                    <li><img src="images/search.svg" alt="icon"><div class="string">Google</div></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><img src="images/map.svg" alt="icon"><div class="string">Map</div></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><img src="images/idojaras.png" alt="icon"><div class="string">Weather</div></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><img src="images/cromax.svg" alt="icon"><div class="string">Car Parts</div></li>
+                </a>
+
+            </ul>
+
+        </section>
+
+<!-- ////////////////  OTHER SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+        <section class="other">
+            <ul class="flex">
+                
+                <a href="#" target="_blank">
+                    <li><img src="images/falatozz.png" alt="icon"><div class="string">Food delivery</div></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><img src="images/netpincér.png" alt="icon"><div class="string">Food delivery</div></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="string">Site</div></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="string">Site</div></li>
+                </a>
+                
+            </ul>
+
+            <div class="date">
+
+                <script type="text/javascript">
+                    var myDate = new Date();
+                    var myDay = myDate.getDay();
+                    
+                    // Array of days.
+                    var weekday = ['Sunday', 'Monday', 'Tuesday',
+                        'Wednesday', 'Thursday', 'Friday', 'Saturday'
+                    ];
+                    document.write(weekday[myDay]);
+                    document.write("<br/>");
+                    
+                    /*// get hour value.
+                    var hours = myDate.getHours();
+                    var ampm = hours >= 24;
+                   
+                    var minutes = myDate.getMinutes();
+                    minutes = minutes < 10 ? '0' + minutes : minutes;
+                    var myTime = hours + " : " + minutes;
+                    document.write(myTime);*/
+                </script>
+                <div id="txt"></div>
+
+            </div>
+        </section>
+
+        <section class="developer">
+            <ul class="flex">
+                
+                <a href="#/" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+
+
+                <a href="#" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+
+
+                <a href="" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+                <a href="" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+                <a href="" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+                <a href="" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+                <a href="" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+
+
+                <a href="" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+                <a href="" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+                <a href="" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+                <a href="" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><img src="images/browser_alt.png" alt="icon"><div class="dev">My Site</div></li>
+                </a>
+
+            </ul>
+        </section>
+    </main>
+    
+</body>
+</html>
